@@ -1,0 +1,10 @@
+desc
+1 = readfile ./Tests/in.txt
+2 = writefile ./Tests/out.txt
+3 = sort
+4 = replace word1 word2
+5 = grep word1
+6 = dump ./Tests/DumpOut.txt
+11 = wrotefile ./Tests/out.txt
+csed
+1 -> 3 -> 6 -> 5 -> 11 -> 4 -> 2
