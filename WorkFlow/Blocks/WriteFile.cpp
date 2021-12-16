@@ -5,7 +5,7 @@
 
 BlockType WriteFile::getType()
 {
-	return OUT;
+	return BlockType::OUT;
 }
 
 Text WriteFile::execute(Text& output, std::vector<std::string>& args)

@@ -4,7 +4,7 @@
 
 BlockType Sort::getType()
 {
-	return INOUT;
+	return BlockType::INOUT;
 }
 
 Text Sort::execute(Text& output, std::vector<std::string>& args)

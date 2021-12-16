@@ -5,7 +5,7 @@
 
 BlockType ReadFile::getType()
 {
-	return IN;
+	return BlockType::IN;
 }
 
 Text ReadFile::execute(Text& input, std::vector<std::string>& args)

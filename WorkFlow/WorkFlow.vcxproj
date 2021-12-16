@@ -24,6 +24,7 @@
     <ProjectGuid>{d01dfc0f-e99d-4a87-9b33-59ba77b1d036}</ProjectGuid>
     <RootNamespace>WorkFlow</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Work_Flow</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

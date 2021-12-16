@@ -6,7 +6,7 @@
 
 
 typedef std::list<std::string> Text;
-enum BlockType
+enum class BlockType
 {
 	IN, INOUT, OUT, FIRST
 };
@@ -18,4 +18,3 @@ public:
 	virtual ~Block() = default;
 	virtual BlockType getType() = 0;
 };
-

@@ -2,10 +2,9 @@
 #include "..\BlockMaker.h"
 #include "..\Exceptions\ArgsExceptions.h"
 
-
 BlockType Replace::getType()
 {
-	return INOUT;
+	return BlockType::INOUT;
 }
 
 Text Replace::execute(Text& input, std::vector<std::string>& args)

@@ -6,9 +6,7 @@
 
 class BlockFactory
 {
-	BlockFactory() = default;
 public:
-
 	void RegisterMaker(const std::string& block_name, IBlockMaker* maker)
 	{
 		if(makers.find(block_name) != makers.end()) {
@@ -32,6 +30,10 @@ public:
 		IBlockMaker* maker = iter->second;
 		return maker->Create();
 	}
+private:
+	BlockFactory() = default;
+
+	BlockFactory(const BlockFactory&) = delete;
+
 	std::map<std::string, IBlockMaker*> makers;
 };
-

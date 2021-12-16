@@ -4,7 +4,7 @@
 
 BlockType Grep::getType()
 {
-	return INOUT;
+	return BlockType::INOUT;
 }
 
 Text Grep::execute(Text& input, std::vector<std::string>& args)

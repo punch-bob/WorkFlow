@@ -5,7 +5,7 @@
 
 BlockType Dump::getType()
 {
-	return INOUT;
+	return BlockType::INOUT;
 }
 
 Text Dump::execute(Text& output, std::vector<std::string>& args)

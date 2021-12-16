@@ -6,7 +6,6 @@ template<typename T>
 class BlockMaker : public IBlockMaker
 {
 public:
-
 	Block* Create() const override
 	{
 		return new T();
@@ -17,4 +16,3 @@ public:
 		BlockFactory::getInstance().RegisterMaker(block_name, this);
 	}
 };
-
